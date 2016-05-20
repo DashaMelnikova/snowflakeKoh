@@ -1,0 +1,40 @@
+<!doctype html>
+<html xml:lang="ru" lang="ru">
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Cache-Control" content="no-cache"/>
+		<title>Снежинка Коха</title>
+		<script src="snowflakeKoh.js"></script>
+	</head>
+
+	<body>
+		
+			<table align="center" border="0" cellspacing="10" cellpadding="10" style="background-color:#FDE7FF">
+				<tr>
+					<td colspan="2">
+						<canvas height="600" width="600" id='canvas' style="background-color:#FFF8FF"></canvas>
+					</td>
+				</tr>
+				<tr>
+					<td  align="center">
+						<p>Количество итераций: <input type="number" cols="3" rows="1" id="iter" name = "iter"/></p>
+					</td>
+					<td  align="center">
+						<p>Координаты треугольника: </p>
+						<p>Длина: <input type="number" cols="3" rows="1" id="length" name = "length" value="300"/></p>
+						<p>х: <input type="number" cols="3" rows="1" id="x" name = "x" value="150"/></p>
+						<p>у: <input type="number" cols="3" rows="1" id="y" name = "y" value="390"/></p>
+					</td> 
+				</tr>
+				<tr>
+					<td align="center">
+							<input  type="button" onclick="example(iter.valueAsNumber)" id="make" value="Выполнить" />
+					</td>
+				</tr>
+				
+			</table>
+		
+	</body>
+</html>
